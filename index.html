@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- DOCTYPE é necessário para que o navegador interprete esta página como um conjunto de caracteres com marcações HTML/uma página HTML.
+ O DOCTYPE html é referente à versão HTML 5 e podem existir outras variantes de acordo com o documento que foi criado.
+
+Uma Tag indica o início e o término de um bloco de código da página. Deve-se iniciar a tag com < e finalizar com />.  
+É obrigatório abrir e fechar a tag.  Algumas tags possuem atributos e propriedades diferenciadas, requerendo formas diferentes para fechar.
+
+Seções da página: inicia com as tags head e depois body. -->
+
+<html lang="pt-br">
+    <!--linguagem que vai ser utilizada, sempre importante defini-la-->
+    
+<head>
+    <meta charset="UTF-8">
+    <!--Definição de conjunto de caracteres que serão utilizados na página (caracteres especiais, símbolos...). A tag meta charset="utf-8" é o conjunto mais utilizado em 
+        páginas web-->
+        
+    <title>Projeto Enade - Logística 2018</title>
+   
+    <style>
+       /* para fazer comentários em CSS utilizamos barra e asterisco, para comentários maiores fechamos com */
+        /* tag style é utilizada para dar estilo ao texto. Na parte do body, foi inserida alterações como tamanho da fonte (fonte-size 15px), alinhamento do texto ao centro (text-align:center), fonte diferenciada (font-family), cor de fundo (background) e cor da fonte (color)*/
+        
+        body{
+            font-size: 15px;
+            text-align: center;
+            font-family:sans-serif;
+            background: #b9dfd7;
+             color: #333;
+        }
+         h2{
+            background-color: rgba(6, 83, 83, 0.562);
+            
+         }
+    </style>
+</head> 
+
+    <body> <!-- - body - Formatação de fontes - Utilização de tags de formatação no body -->
+        
+            <p><img src="img/enade.png" alt="Logo do Enade 2018"> </p>
+        
+        <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;" >Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+            <!-- tag h1 foi utilizada para definição de título. É importante saber a ordem do título, no caso, título de ordem 1.
+            A tag <p> serve para definir que se trata de um parágrafo, inserindo o conteúdo do parágrafo.
+            A tag <b> é para realçar uma palavra ou um trecho com tipo negrito.
+            Para inserir uma imagem interna, que está na pasta img, insere-se a tag img src="local onde está a imagem", sendo que com alt, descrevemos a imagem caso não seja possível abri-la. -->
+            
+            <hr> <!-- Tag hr utilizada para inserir uma linha horizontal na página.-->
+                
+
+        <h2 style="color: white;">O que é o ENADE?</h2>
+        
+            <p style="text-align: justify; padding: 15px;" >"O Exame Nacional de Desempenho dos Estudantes (Enade) avalia o rendimento dos concluintes dos cursos de graduação em relação aos conteúdos programáticos previstos nas diretrizes curriculares dos cursos, o desenvolvimento de competências e habilidades necessárias ao aprofundamento da formação geral e profissional, e o nível de atualização dos estudantes com relação à realidade brasileira e mundial. <!--parágrafo estilizado com o texto justificado-->
+
+            Aplicado pelo Inep desde 2004, o Enade integra o Sistema Nacional de Avaliação da Educação Superior (Sinaes), composto também pela Avaliação de cursos de graduação e pela Avaliação institucional. Juntos eles formam o tripé avaliativo que permite conhecer a qualidade dos cursos e instituições de educação superior brasileiras. Os resultados do Enade, aliados às respostas do Questionário do Estudante, são insumos para o cálculo dos Indicadores de Qualidade da Educação Superior.
+            
+            A inscrição é obrigatória para estudantes ingressantes e concluintes habilitados de cursos de bacharelado e superiores de tecnologia vinculados às áreas de avaliação da edição. A situação de regularidade do estudante é registrada no histórico escolar.
+                
+            O Ciclo Avaliativo do Enade determina as áreas de avaliação e os cursos a elas vinculados. As áreas de conhecimento para os cursos de bacharelado e licenciatura derivam da tabela de áreas do conhecimento divulgada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq). Já os eixos tecnológicos são baseados no Catálogo Nacional de Cursos Superiores de Tecnologia (CNCST), do Ministério da Educação."
+            </p> <!--fechamento do parágrafo-->
+
+            <p>Os simulados das provas do ENADE podem ser acessados por meio do site do <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos" rel = "next" target="self"> INEP.</a>
+            </p> 
+            <!-- a tag <a href> vai linkar para a primeira questão "local onde está".
+            Dentro do atributo href entre aspas, definimos o endereço/caminho da página que será carregada quando o usuário clicar no hyperlink.
+            O atributo rel="next" vai abrir uma próxima pagina, e o atributo target="_self", abrirá a página na aba atual -->
+            
+
+            <p>Para acessar a prova e o gabarito do simulado de Tecnologia em Logística - 2018, basta baixar os PDFs:</p>
+                    
+                    
+            <p> <a href="PDF/tecnologia_em_logistica_prova.pdf" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > Prova </button></a>
+            <!-- A tag <button style> – Define o estilo do botão-->
+            
+            <a href="PDF/tecnologia_em_logistica_gabarito.pdf" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562);  color: white;"> Gabarito </button></a>
+                    
+            <a href="creditos.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;" > CRÉDITOS </button></a></p><br>
+            
+            <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+                
+
+        <h2 style="color: white;">Em que consiste o projeto de PMI?</h2>
+            
+            <p style="padding: 15px;">Este projeto de PMI tem o objetivo de reproduzir um sistema de simulado on-line da última prova do ENADE do curso de <b>Tecnologia em Logística, aplicada em 2018</b>.
+            São disponibilizadas todas as questões objetivas referentes a esta prova, num total de 35 questões com alternativas. 
+            Há a possibilidade de conectar uma página à outra das questões de uma forma dinâmica, 
+            por meio de hiperlinks e botões que permitem avançar e voltar, redirecionar para páginas de respostas ou mesmo finalizar a prova, o que tenta se aproximar da experiência real de um simulado.
+            </p>           
+            <hr>
+            
+            <p> <a href="Eq5_LGT_2018_INICIARPROVA.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > INICIAR PROVA </button></a></p>
+            <hr>
+
+        <footer>
+                
+            <p style="font-family:Georgia, Times New Roman, Times, serif; font-size: 13px;"><b>Autores: </b>ALVES, Geisiane; DINIZ, Raquel; FERREIRA, Isabelle; FERRO, Henrique; PEREIRA, Vinicius.</p>
+            <p style="font-family:Georgia, Times New Roman, Times, serif;font-size: 13px;"><b>Orientadora:</b> MSc. FELIX, Rita.<p>
+            
+            <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+            
+            <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+                
+        </footer>
+    </body>
+</html>
