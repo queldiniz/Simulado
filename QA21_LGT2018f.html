@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <link rel="stylesheet" href="barrinha.css">
+
+    <title>QA21_LGT2018</title>
+    
+       
+</head>
+
+<body onchange="salvarFormulario('q21')" onload="autofill('q21')">
+    
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+    <hr>
+    <link rel="stylesheet" href="estilo.css">
+    
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 63%, #bcb9b9 63%)"></div>
+    </section>
+
+    <h2>QUESTÃO 21</h2>
+    
+        <p style="text-align: justify;">Uma empresa recebeu um pedido de confecção de
+        6 000 sandálias. Sabe-se que o custo unitário de
+        produção de cada uma é de R$ 2,00 e que os custos
+        fixos da empresa totalizam R$ 18 000,00.</p>
+    
+
+    
+    <label for="questão">Com base nessa situação hipotética, o preço por sandália a partir do qual a empresa não tem prejuízo é de</label>
+    <br>
+        <form action="" method="GET"></form>
+
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. R$ 4,00.</span></p>
+        
+        <p><input type="radio" id="correta" name="alternativa" value="B" onclick="MudarDePaginaC()"><span>B. R$ 5,00.</span></p>
+        <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. por isso teremos de olhar no gabarito qual a resposta certa -->
+        <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C. R$ 5,50.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D. R$ 6,00.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()"><span>E. R$ 6,50.</span></p>
+
+        
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA21_RC_LGT_2018f.html";
+        }
+        
+        function MudarDePaginaE(){
+            location.href= "QA21_RE_LGT_2018f.html";
+        }
+        
+
+    </script>
+
+
+        <p> <a href="QA20_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 20 </button></a>
+            <a href= "QA22_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 22 </button></a></p>
+        <hr>
+        <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel = "next" target="_self"> <button style="background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+        <br>
+        <hr>
+        <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+        </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+        </p>
+    
+        <footer>
+        <hr>
+        <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+        
+        <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+</body>
+</html> 

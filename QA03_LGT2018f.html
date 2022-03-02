@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>QA03_LGT2018</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <link rel="stylesheet" href="barrinha.css">
+    <script src="funçoes.js"></script>
+</head>
+ 
+<body onchange="salvarFormulario('q3')" onload="autofill('q3')">
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+
+    <hr>
+
+    <link rel="stylesheet" href="estilo.css">
+    <!--a formatação das nossas páginas do ENADE estão no arquivo CSS estilo.css-->
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 9%, #bcb9b9 9%)"></div>
+    </section>
+    
+    <h2>QUESTÃO 03</h2>
+
+        <p>As questões relacionadas a organismos geneticamente modificados deixaram, há muito tempo, de
+        serem discutidas apenas no âmbito acadêmico-científico. Também na arte, a transgenia ganhou lugar,
+        ocupando o imaginário e a criatividade de artistas. Nesse campo, o brasileiro Eduardo Kac transita
+        pela zona fronteiriça entre arte, ciência e tecnologia.</p>
+        <p>Os trabalhos de Eduardo Kac têm sido exibidos em exposições internacionais. Em seu currículo, constam
+        obras de arte transgênicas, como GFP Bunny, uma coelha geneticamente modificada cujo pelo emite
+        fluorescência verde ao ser iluminado por luz ultravioleta. Ela foi batizada com esse nome em razão da
+        proteína verde fluorescente (green fluorescent protein) obtida de uma água-viva do Pacífico e injetada
+        em óvulos de coelhos albinos, procedimento efetivamente realizado em um centro de pesquisa na França.</p>
+
+        <blockquote style="text-align: right;font-size: 15px;">Disponível em: www.g1.globo.com/Noticias
+        /PopArte. Acesso em: 18 ago.2018 (adaptado).</blockquote> 
+        <!-- empregamos a tag blockquote para que o texto ficasse alinhado à direita e com formatação menor 
+        que o corpo do texto-->
+
+        <p style="text-align: center;"> <img
+        src="img/img_QA03.jpg" alt="A obra GFP Bunny, de Eduardo Kac" width="500px"></p>
+
+        <blockquote style="text-align: center;font-size: 15px;">FONTEINE, C. Fotografia. Título: Alba, the 
+        fluorescent bunny,2000.</blockquote> 
+
+        <blockquote style="text-align: right;font-size: 15px;">Disponível em: http://www.ekac.org/gfpbunny.
+        html#gfpbunnyanchor.Acesso em: 18 ago. 2018 (adaptado)</blockquote> 
+
+        <p>A partir das informações apresentadas, avalie as afirmações a seguir.</p>
+
+        <p>I. A obra GFP Bunny, de Eduardo Kac, contribui para a ampliação dos horizontes artísticos por 
+        meio do uso da engenharia genética como técnica de criação artística.</p>
+        <p>II. A obra GFP Bunny suscita várias questões, entre as quais se inclui a de caráter ético, como, 
+        por exemplo, a dos limites da pesquisa científica e do uso de aplicações tecnológicas.</p>
+        <p>III. As obras de arte biotecnológicas promovem a circulação de conceitos do campo da arte e de
+        técnicas laboratoriais, mas, ao mesmo tempo, banaliza a singularidade da produção do artista.</p>
+        
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+        
+        
+    <label for="questão">A respeito dessas asserções, assinale a opção correta</label>
+        
+        
+        <form action="" method="GET"></form>
+
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. I, apenas.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="B" onclick="MudarDePaginaE()"><span>B. III, apenas.</span></p>
+    
+        <p><input type="radio" id = "correta" name="alternativa" value="C" onclick="MudarDePaginaC()"><span>C. I e II, apenas.</span></p>
+         <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta 
+        errada. Por isso, verificamos no gabarito qual a resposta certa/errada -->
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D. II e III, apenas.</span></p>
+        
+        <input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()"><span>E. I, II e III.</span></p>
+        
+
+         <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a 
+        alternativa B nesse caso. No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, apareça a página
+        com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de cada questão estejam de acordo com o gabarito da prova de Logística do ENADE de 2018-->
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA03_RC_LGT_2018f.html";  
+        }
+        
+            function MudarDePaginaE(){
+            location.href= "QA03_RE_LGT_2018f.html";
+        }
+        
+        </script>
+
+        <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de
+         acordo com o que vem antes e depois!!!-->
+
+        <p> <a href="QA02_LGT2018f.html" rel = "next" target="_self"> <button style="background-color:
+        rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 02 </button></a>
+            <a href= "QA04_LGT2018f.html" rel = "next" target="_self"> <button style="background-color:
+        rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 04 </button></a></p>
+        <hr>
+
+        <!--botão para sair da prova e ver o resultado.  -->
+        <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style=
+        "background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+        <br>
+
+        <hr>
+        <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+        </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+        </p>
+
+    <footer>
+        <hr>
+        <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+        
+        <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <title>QA22_LGT2018</title>
+    <link rel="stylesheet" href="barrinha.css">
+       
+</head>
+
+<body onchange="salvarFormulario('q22')" onload="autofill('q22')">
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+    <hr>
+    <link rel="stylesheet" href="estilo.css">
+    <!--a formatação das nossas páginas do ENADE estão no arquivo CSS estilo.css-->
+    
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 66%, #bcb9b9 66%)"></div>
+    </section>
+    
+    <h2>QUESTÃO 22</h2>
+    
+        <p style="text-align: justify;">A mão de obra necessária à separação e ao manuseio
+        de produtos no depósito de uma empresa representa um dos componentes de custo de pessoal mais altos
+        no sistema logístico. A movimentação de materiais precisa ser executada de uma forma segura e
+        eficiente, que reduza os custos e que apresente os produtos na hora certa, em quantidade e locais
+        corretos para que não sofram danos. São, portanto, princípios básicos da movimentação de materiais: o
+        princípio do planejamento, o da padronização, o do trabalho, o do sistema e o da unitização.</p>
+
+        <blockquote style="text-align: right;font-size: 15px;">BALLOU, R.H. <b>Gerenciamento da cadeia de suprimento – logística empresarial.
+        </b>5. ed. Porto Alegre: Bookman, 2008 (adaptado).</blockquote><br>
+        <!-- empregamos a tag blockquote para que o texto ficasse alinhado à direita e com formatação menor que o corpo do texto-->
+    
+        <p style="text-align: justify;">A partir dessas informações, avalie as asserções a seguir e a relação proposta entre elas.</p>
+        
+        <p style="text-align: justify;">Considerando ações imediatas de curto prazo que seriam suficientes para atender a nova demanda
+        projetada no que se refere à capacidade de armazenagem dessa empresa, avalie as afirmações a seguir.</p>
+        <br>
+        
+        <p>I. Para movimentar internamente os materiais, as empresas precisam elaborar previamente
+            um planejamento e padronizar processos pertinentes.</p>      
+        
+        <p style="text-align: center; font-size: 20px;"><b>PORQUE</b></p>
+
+        <p>II. Minimizar a movimentação de materiais na empresa mantém um layout interno bem organizado.</p>
+        <br>
+
+
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+        <label for="questão">A respeito dessas asserções, assinale a opção correta.</label>
+        
+    
+    <form action="" method="GET"></form>
+
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</span></p>
+        
+        <p><input type="radio" id="correta" name="alternativa" value="B" onclick="MudarDePaginaC()"><span>B. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</span></p>
+        <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. Por isso, verificamos no gabarito qual a resposta certa/errada -->
+        <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C. As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()"><span>E. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.As asserções I e II são proposições falsas.</span></p>
+        
+    
+        <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a alternativa B nesse caso.
+        No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, apareça a página
+        com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de cada questão estejam de acordo 
+        com o gabarito da prova de Logística do ENADE de 2018-->
+
+    <script>
+        function MudarDePaginaC(){
+        location.href="QA22_RC_LGT_2018f.html";  
+    }
+    
+        function MudarDePaginaE(){
+        location.href= "QA22_RE_LGT_2018f.html";
+    }
+        
+    </script>
+
+        <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de acordo com o que vem antes e depois!!!-->
+
+        <p> <a href="QA21_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;" > QUESTÃO 21 </button></a>
+            <a href= "QA23_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;" > QUESTÃO 23 </button></a></p>
+        <hr>
+
+        <!--botão para sair da prova e ver o resultado.  -->
+        <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style="background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+        <br>
+        <hr>
+        <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+        </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+        </p>
+    
+    <footer>
+        <hr>
+        <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+        
+        <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+    </footer>
+</body>
+</html>

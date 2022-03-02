@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <title>QA26_LGT_2018</title>
+    <link rel="stylesheet" href="barrinha.css">
+       
+</head>
+
+<body onchange="salvarFormulario('q26')" onload="autofill('q26')" >
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+    <hr>
+    <link rel="stylesheet" href="estilo.css">
+    
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 78%, #bcb9b9 78%)"></div>
+    </section>
+
+    <h2>QUESTÃO 26</h2>
+    
+         <p style="text-align: justify;">Um comprador que trabalha em uma fábrica de componentes de computador necessita atender a um
+        pedido de 10 000 espaçadores — peças utilizadas em embalagens —, que poderão ser produzidos
+        internamente ou comprados de um fornecedor que apresente a melhor proposta. Na tabela a seguir,
+        mostram-se as condições que estão sob análise desse comprador.</p>
+       
+        <p style="text-align:center;"> <img src="img/tabela_26.jpg" alt="tabela"></p>
+
+
+    
+    <label for="questão">Nessa situação, o comprador deve optar por</label>
+            
+        <form action="" method="GET"></form>
+
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. avaliar o custo total e comprar do fornecedor A.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="B" onclick="MudarDePaginaE()"><span>B. avaliar o custo total e comprar do fornecedor B.</span></p>
+        <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. por isso teremos de olhar no gabarito qual a resposta certa -->
+        <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C. avaliar o custo total e comprar no menor custo fixo.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D. avaliar o custo total e comprar no custo variável intermediário.</span></p>
+        
+        <p><input type="radio" id="correta" name="alternativa" value="E" onclick="MudarDePaginaC()"><span>E. avaliar o custo total da operação de suprimentos e fabricar internamente.</span></p>
+
+        
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA26_RC_LGT_2018f.html";
+        }
+        
+        function MudarDePaginaE(){
+            location.href= "QA26_RE_LGT_2018f.html";
+        }
+        
+    </script>
+
+
+        <p> <a href="QA25_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 25 </button></a>
+            <a href= "QA27_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 27 </button></a></p>
+        <hr>
+        <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel = "next" target="_self"> <button style="background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+        <br>
+        <hr>
+        <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+        </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+        </p>
+    
+        <footer>
+        <hr>
+        <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+        
+        <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+</body>
+</html> 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <title>QA18_LGT2018</title>
+    <link rel="stylesheet" href="barrinha.css">
+       
+</head>
+
+<body onchange="salvarFormulario('q18')" onload="autofill('q18')">
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+    <hr>
+    <link rel="stylesheet" href="estilo.css">
+    <!--a formatação das nossas páginas do ENADE estão no arquivo CSS estilo.css-->
+    
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 54%, #bcb9b9 54%)"></div>
+    </section>
+    
+    <h2>QUESTÃO 18</h2>
+
+        <p>Na logística, o RFID (Radio-Frequency IDentification)
+        surge com o objetivo de automatizar o processo
+        de rastreamento de cargas, produtos e demais
+        elementos necessários para o transporte de
+        mercadorias ao longo de um trajeto, sem que haja
+        a necessidade de se incluir trabalho manual para
+        sua conferência ou controle. A utilização de RFID
+        no sistema de infraestrutura e monitoramento de
+        cargas internacionais apresenta, para a logística,
+        vantagens relacionadas ao registro de dados, à
+        agilidade no repasse de informações e à garantia
+        de rigor e qualidade nos serviços prestados.</p>
+
+        <blockquote style="text-align: right;font-size: 15px;">NASSAR, V.; VIEIRA, M.L.H. A aplicação de RFID na logística: um estudo de caso do
+         Sistema de Infraestrutura e Monitoramento de Cargas do Estado de Santa Catarina. Gest. Prod., v. 21, n. 3, p. 520-531, 2014 
+         (adaptado).</blockquote><br>
+        <!-- empregamos a tag blockquote para que o texto ficasse alinhado à direita e com formatação menor que o corpo do texto-->
+ 
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+        
+    <label for="questão">Considerando-se essas informações, é correto afirmar que, no transporte internacional, o RFID
+    agrega valor ao produto se for aplicado a</label><br>
+        <form action="" method="GET"></form>
+
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. diferentes rotas de distribuição, porque as
+        gerencia, apontando alternativas no caso de uma delas falhar e permitindo o acesso remoto aos níveis de combustível do veículo e a 
+        outros dados referentes ao seu estado.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="B" onclick="MudarDePaginaE()"><span>B. contêineres, porque garante a identificação
+        das cargas e a verificação da quantidade de contêineres embarcados, extraindo dados importantes para a operação de transporte
+        internacional e proporcionando agilidade na captação dos dados dos produtos.</span></p>
+         <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. Por isso, verificamos no gabarito qual a resposta certa/errada -->
+        <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C. contêineres, porque garante a identificação
+        de cada um, diminuindo a margem de erros na contagem dos contêineres e mostrando de forma clara seu tamanho e sua capacidade de 
+        carga.</span></p>
+        
+        <p><input type="radio" id="correta" name="alternativa" value="D" onclick="MudarDePaginaC()"><span>D. contêineres, porque garante a identificação
+        das cargas, a rastreabilidade dos produtos e o monitoramento on-line do trajeto, fornecendo dados, em tempo real, de diferentes 
+        indústrias ou equipamentos de transportes.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()"><span>E. diferentes rotas de distribuição, pois facilita
+        as transações comerciais e reduz os custos,agilizando a identificação dos produtos ao serem embarcados, durante o trajeto e no
+        desembarque.</span></p>
+        
+        
+        <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a alternativa B nesse caso.
+        No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, apareça a página
+        com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de cada questão estejam de acordo 
+        com o gabarito da prova de Logística do ENADE de 2018-->
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA18_RC_LGT_2018f.html";  
+        }
+        
+         function MudarDePaginaE(){
+            location.href= "QA18_RE_LGT_2018f.html";
+        }
+        
+       </script>
+
+        <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de acordo com o que vem antes e depois!!!-->
+
+        <p> <a href="QA17_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 17 </button></a>
+            <a href= "QA19_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 19 </button></a></p>
+        <hr>
+
+        <!--botão para sair da prova e ver o resultado.  -->
+        <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style="background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+        <br>
+        <hr>
+        <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+        </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+        </p>
+    
+        <footer>
+        <hr>
+        <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+        
+        <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+            
+
+</body>
+</html>

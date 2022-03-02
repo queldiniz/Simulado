@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+
+        body{
+            text-align: center;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #363636;
+            padding: auto;
+           
+     }
+            
+     
+        h1{
+            font-size: 24px;
+        }
+
+       
+       
+
+        #wrap{
+            width: 660px;
+        
+            margin: auto;
+           
+            background: #008080;
+            
+            padding: 10px 20px;
+       
+        } 
+       
+        
+        #content{
+            float: center;
+            width:660px;
+            background: #FFE4B5;
+        }
+
+
+        button{
+            cursor: pointer;
+            
+         
+        }
+        button:hover{
+           background-color: #008080;
+            
+         
+        }

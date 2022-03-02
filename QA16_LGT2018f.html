@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <title>QA16_LGT2018</title>
+    <link rel="stylesheet" href="barrinha.css">
+    
+       
+</head>
+
+<body onchange="salvarFormulario('q16')" onload="autofill('q16')">
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+    <hr>
+    <link rel="stylesheet" href="estilo.css">
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 48%, #bcb9b9 48%)"></div>
+    </section>
+    <h2>QUESTÃO 16</h2>
+
+        <p style="text-align: justify;">Um empresário, interessado em aumentar a produtividade e melhorar a qualidade dos produtos e serviços 
+        para exportação, não encontrou, no Brasil, os insumos necessários para atingir seus objetivos. Em visita a 
+        uma feira de negócios no exterior, descobriu uma organização que dispunha desses insumos para venda, 
+        com excelente custo/benefício para sua empresa. Dado que tinha condições de adquiri-los com uma 
+        tributação menor devido a um regime em vigor na legislação, resolveu comprá-los. </p>
+
+
+        <label for="questão">Nesse contexto, o regime aduaneiro especial que se enquadra no processo de compra desses materiais e 
+            exportação do produto acabado com foco em isenção ou suspensão dos impostos é denominado:</label>
+        <br>
+     
+        <!-- empregamos a tag blockquote para que o texto ficasse alinhado à direita e com formatação menor que o corpo do texto-->
+    
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+        
+        <form action="" method="GET"></form>
+            
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. dumping.</span></p>
+        
+        <p><input type="radio" id="correta" name="alternativa" value="B" onclick="MudarDePaginaC()"><span>B. drawback.</span></p>
+         <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. Por isso, verificamos no gabarito qual a resposta certa/errada -->
+        <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C. depósito especial.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D.  trânsito aduaneiro.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()"><span>E. depósito alfandegado certificado.</span></p>
+        
+       
+        
+        <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a alternativa B nesse caso.
+        No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, apareça a página
+        com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de cada questão estejam de acordo 
+        com o gabarito da prova de Logística do ENADE de 2018-->
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA16_RC_LGT_2018f.html";  
+        }
+        
+         function MudarDePaginaE(){
+            location.href= "QA16_RE_LGT_2018f.html";
+        }
+        
+
+       </script>
+
+        <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de acordo com o que vem antes e depois!!!-->
+
+        <p> <a href="QA15_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 15 </button></a>
+            <a href= "QA17_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 17 </button></a></p>
+        <hr>
+
+        <!--botão para sair da prova e ver o resultado.  -->
+        <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style="background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+        <br>
+
+        <hr>
+        <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+        </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+        </p>
+    
+        <footer>
+        <hr>
+        <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+        
+        <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+            
+</body>
+</html>

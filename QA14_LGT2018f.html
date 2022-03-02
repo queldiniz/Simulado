@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <title>QA14_LGT2018</title>
+    <link rel="stylesheet" href="barrinha.css">
+       
+</head>
+
+<body onchange="salvarFormulario('q14')" onload="autofill('q14')">
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+    <hr>
+    <link rel="stylesheet" href="estilo.css">
+    
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 42%, #bcb9b9 42%)"></div>
+    </section>
+    
+    
+    <h2>QUESTÃO 14</h2>
+
+        <p style="text-align: justify;">O serviço logístico em uma empresa representa um equilíbrio entre nível de serviço e custo. O impacto 
+        de uma falha logística sobre o custo-benefício está diretamente relacionado com a importância da execução do serviço para o cliente envolvido. 
+        Quanto mais significativo for o impacto da falha do serviço sobre o cliente, maior será a prioridade 
+        dada ao desempenho logístico. Considerando-se  esse contexto, verifica-se que o serviço logístico  básico é medido de acordo com os seguintes 
+        critérios: disponibilidade, desempenho operacional e confiabilidade de serviço. </p>
+
+        <blockquote style="text-align: right;font-size: 15px;"> BOWERSOX, D. J.; CLOSS, D. J.<b>Logística empresarial: </b>o processo de integração da cadeia de suprimento.
+        1. ed. São Paulo: Atlas, 2007 (adaptado).</blockquote><br>
+
+        <label for="questão">A partir das informações do texto, assinale a opção em que são apresentados, respectivamente,
+            os critérios de disponibilidade, desempenho operacional e confiabilidade de serviço.</label>
+        <br>
+     
+        <!-- empregamos a tag blockquote para que o texto ficasse alinhado à direita e com formatação menor que o corpo do texto-->
+    
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+        
+    <form action="" method="GET"></form>
+            
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. Contar com recursos para obtenção de 
+            materiais; cumprir com custos e prazos de produção; atributos de qualidade da logística(mensuração precisa da disponibilidade e do 
+            desempenho operacional).</span></p>
+        
+        <p><input type="radio" name="alternativa" value="B" onclick="MudarDePaginaE()"><span>B. Ter fornecedores que cumpram prazos de 
+            entrega; tempo decorrido desde o recebimento de um pedido até a entrega da mercadoria; clientes satisfeitos com os níveis de serviços 
+            prestados.</span></p>
+         <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. Por isso, verificamos no gabarito qual a resposta certa/errada -->
+        <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C.  Ter estoque para atender às necessidades 
+            dos clientes relativos a materiais e produtos;qualidade na produção dos produtos;compromisso com prazos.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D. Ter máquinas, equipamentos e pessoas 
+            suficientes na produção; tempo decorrido desde o recebimento de um pedido até a entrega da mercadoria; número de clientes satisfeitos com 
+            os níveis de serviços prestados.</span></p>
+        
+        <p><input type="radio" id="correta" name="alternativa" value="E" onclick="MudarDePaginaC()"><span>E. Ter estoque para atender às necessidades dos 
+            clientes relativos a materiais e produtos; tempo decorrido desde o recebimento de um pedido até a entrega da mercadoria; atributos de 
+            qualidade da logística (mensuração precisa da disponibilidade e do desempenho operacional).</span></p>
+            
+           
+        
+        <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a alternativa B nesse caso.
+        No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, apareça a página
+        com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de cada questão estejam de acordo 
+        com o gabarito da prova de Logística do ENADE de 2018-->
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA14_RC_LGT_2018f.html";  
+        }
+        
+         function MudarDePaginaE(){
+            location.href= "QA14_RE_LGT_2018f.html";
+        }
+        
+       </script>
+
+        <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de acordo com o que vem antes e depois!!!-->
+
+        <p> <a href="QA13_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 13 </button></a>
+            <a href= "QA15_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 15 </button></a></p>
+        <hr>
+
+        <!--botão para sair da prova e ver o resultado.  -->
+        <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style="background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+        <br>
+
+        <hr>
+        <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+        </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+        </p>
+    
+        <footer>
+        <hr>
+        <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+        
+        <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+            
+</body>
+</html>

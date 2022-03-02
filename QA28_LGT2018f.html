@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <title>QA28_LGT_2018</title>
+    <link rel="stylesheet" href="barrinha.css">
+       
+</head>
+
+<body  onchange="salvarFormulario('q28')" onload="autofill('q28')">
+<p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+<h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+<hr>
+<link rel="stylesheet" href="estilo.css">
+
+<section>
+    <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 84%, #bcb9b9 84%)"></div>
+</section>
+
+        <h2>QUESTÃO 28</h2>
+
+        <p>Considere a seguinte cadeia de suprimentos.</p>
+
+        <p style="text-align: center;"> <img src="img/diagrama_Q28.jpg" alt="diagrama"></p>
+
+        <p>Nessa cadeia, o número 1 representa um software que visa aumento da velocidade de comunicação entre
+        empresas, agiliza o processo de compras e que integra os fornecedores à empresa. O número 2 representa
+        um software utilizado internamente na empresa para gestão de seu armazém; e o número 3, um software
+        que pode ser utilizado para controle e gestão das entregas da indústria para seus distribuidores, que são
+        grandes atacadistas.</p>
+
+    <label for="questão">Nesse contexto, os tipos de softwares usados para as situações 1, 2 e 3, respectivamente, são</label>
+        
+        <form action="" method="GET"></form>
+
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. MRP <i>(material requirement planning)</i>, ERP <i>(enterprise resource planning)</i> e TMS <i>(transport
+        management system).</i></span></p>
+
+        <p><input type="radio" name="alternativa" value="B" onclick="MudarDePaginaE()" ><span>B. ERP <i>(enterprise resource planning)</i>, MRP <i>(material requirement planning)</i> e WMS <i>(warehouse
+        management system).</i></span></p>
+        <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. por isso teremos de olhar no gabarito qual a resposta certa -->
+        <p><input type="radio" name="alternativa" id="correta" value="C" onclick="MudarDePaginaC()" ><span>C. EDI <i>(electronic data interchange)</i>, WMS <i>(warehouse management system)</i> e TMS <i>(transport
+        management system).</i></span></p>
+
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()" ><span>D. TMS <i>(transport management system)</i>, EDI <i>(eletronic data interchange)</i> e WMS <i>(warehouse
+        management system).</i></span></p>
+
+        <p><input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()" ><span>E. EDI <i>(electronic data interchange),</i> TMS <i>(transport management system)</i> e ERP <i>(enterprise resource
+        planning).</i></span></p>
+
+
+
+    <script>
+        function MudarDePaginaC(){
+        location.href="QA28_RC_LGT_2018f.html";
+        }
+
+        function MudarDePaginaE(){
+        location.href= "QA28_RE_LGT_2018f.html";
+        }
+
+
+    </script>
+
+
+        <p> <a href="QA27_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;" > QUESTÃO 27 </button></a>
+            <a href= "QA29_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;" > QUESTÃO 29 </button></a></p>
+
+        <hr>
+        <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel = "next" target="_self"> <button style="background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+
+        <br>
+        <hr>
+        <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+        </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+        <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+        </p>
+
+        <footer>
+        <hr>
+        <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+        
+        <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+</body>
+</html> 

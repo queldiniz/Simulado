@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>QA06_LGT2018</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <link rel="stylesheet" href="barrinha.css">
+</head>
+
+<body onchange="salvarFormulario('q6')" onload="autofill('q6')">
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+
+    <hr>
+
+    <link rel="stylesheet" href="estilo.css">
+    <!--a formatação das nossas páginas do ENADE estão no arquivo CSS estilo.css-->
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 18%, #bcb9b9 18%)"></div>
+    </section>
+
+    <h2>QUESTÃO 06</h2>
+
+        <p> <b>TEXTO 1</b></p>
+
+        <p> Com base em dados de 2015, estima-se que, no Brasil, haja em torno de 100 mil pessoas em situação de rua. A população que 
+        vivencia situação de rua é formada por pessoas que, em sua maioria, possuem menos que o necessário para atender às necessidades 
+        básicas do ser humano, estando no limite da indigência ou da pobreza extrema, com comprometimento da própria sobrevivência. A 
+        situação desse grupo excluído e marginalizado pode decorrer de diversos fatores, como desemprego estrutural, migração, uso 
+        prejudicial de álcool e outras drogas, presença de transtornos mentais, conflitos familiares, entre outros.</p>
+
+        <blockquote style="text-align: right;font-size: 15px;">HINO, P.; SANTOS, J. O.; ROSA, A. S. Pessoas que vivenciam situação de 
+        rua sob o olhar da saúde.<b>Revista Brasileira de Enfermagem</b>. v. 71, Suplemento 1, p. 732-740, 2018 (adaptado).</blockquote> 
+
+        <p> <b>TEXTO 2</b></p>
+
+        <p>O Ministério da Saúde, em parceria com o Ministério do Desenvolvimento Social e Combate à Fome (MDS) e a Secretaria de Direitos 
+        Humanos da Presidência da República (SDH), lançou uma campanha que objetiva valorizar a saúde como um direito humano de cidadania e 
+        ressaltar que as pessoas em situação de rua têm o direito de ser atendidas na rede de serviços do SUS.</p>
+
+        <blockquote style="text-align: right;font-size: 15px;">Disponível em: http://portalsaude.saude.gov.br/index.php/cidadao/
+        principal/campanhas-publicitarias/19300-campanha-pop-rua .Acesso em: 11 set. 2018 (adaptado).</blockquote>
+        <!-- empregamos a tag blockquote para que o texto ficasse alinhado à direita e com formatação menor que o corpo do texto--> 
+
+        <p>A respeito da população que vivencia situação de rua e considerando os textos apresentados, avalie as afirmações a seguir.</p>
+
+        <p>I. Na elaboração de políticas públicas, devem ser considerados os fatores pessoais e contextuais que levam pessoas a viver em 
+        situação de rua, o que exige o trabalho de equipes multidisciplinares, com o objetivo de assegurar direitos de saúde, dignidade
+        e cidadania a essa população.</p>
+        <p>II. A inexistência de endereço fixo que possibilite fazer cadastros oficiais e estabelecer contato quando necessário, 
+        inviabiliza a inserção dos indivíduos em situação de rua nas políticas públicas de saúde, educação e moradia.</p>
+        <p>III. A homogeneidade do grupo de pessoas que vivem em situação de rua contribui para o desenvolvimento das estratégias de 
+        acolhimento e de atendimento pelas equipes envolvidas em campanhas dirigidas a esse público.</p>
+        <p>IV. A falta de moradia convencional e o comprometimento da identidade, da segurança, do bem-estar físico e emocional e do 
+        sentimento de pertencimento são problemas vivenciados pelas pessoas que vivem em situação de rua e requerem atenção do poder 
+        público.</p>
+
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+        <label for="questão">É correto apenas o que se afirma em</label>   
+             
+        <form action="" method="GET"></form>
+
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. I e III.</span></p>
+        
+        <p><input type="radio" id = "correta"  name="alternativa" value="B" onclick="MudarDePaginaC()"><span>B. I e IV.</span></p>
+
+        <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C. II e III.</span></p>
+        <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. Por isso, verificamos 
+        no gabarito qual a resposta certa/errada -->
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D. I, II e IV.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()"><span>E. II, III e IV.</span></p> 
+
+        <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a alternativa B nesse caso.
+        No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, apareça 
+        a página com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de cada questão 
+        estejam de acordo com o gabarito da prova de Logística do ENADE de 2018-->
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA06_RC_LGT_2018f.html";  
+        }
+        
+            function MudarDePaginaE(){
+            location.href= "QA06_RE_LGT_2018f.html";
+        }
+        
+        </script>
+
+          <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de acordo com o que vem antes e 
+          depois!!!-->
+
+            <p> <a href="QA05_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); 
+            color: white;"; > QUESTÃO 05 </button></a>
+            <a href= "QA07_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); 
+            color: white;"; > QUESTÃO 07 </button></a></p>
+            <hr>
+
+            <!--botão para sair da prova e ver o resultado.  -->
+            <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style="background-color: #a78aff; 
+            color: white;" > FINALIZAR </button></a></p>
+            <br> 
+
+            <hr>
+            <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+            </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+            </p>
+
+        <footer>
+            <hr>
+            <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+            
+            <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+    
+</body>
+</html>

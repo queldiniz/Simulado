@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <title>QA12_LGT2018</title>
+    <link rel="stylesheet" href="barrinha.css">
+       
+</head>
+
+<body  onchange="salvarFormulario('q12')" onload="autofill('q12')">
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+    <hr>
+    <link rel="stylesheet" href="estilo.css">
+    
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 36%, #bcb9b9 36%)"></div>
+    </section>
+    
+    <h2>QUESTÃO 12</h2>
+
+        <p style="text-align: justify;">O acompanhamento e controle da curva ABC pelos gestores logísticos implica responsabilidade 
+        no desenvolvimento das dimensões econômicas das empresas, pois pode gerar redução de custos, diminuindo os preços praticados ao 
+        consumidor final. </p>
+        <p style="text-align: justify;"> Com objetivo de conseguir resultados satisfatórios de produção, o gestor logístico de uma empresa 
+        classifica os itens em classes A, B e C e acompanha a curva ABC para garantir excelência na gestão da 
+        cadeia de suprimentos, na adequação da qualidade e no gerenciamento de estoques.</p>
+
+        <blockquote style="text-align: right;font-size: 15px;"> SLACK, N.; CHAMBERS, S.; JOHNSON, R.<b> Administração da 
+        Produção.</b>2. ed. São Paulo: Atlas, 2002 (adaptado).</blockquote><br>
+
+    <label for="questão">Considerando as informações do texto, bem como o objetivo do gestor logístico no acompanhamento da curva ABC, avalie as afirmações a seguir.</label>
+   
+            
+        <p>I. Os itens da classe A vão requerer mais 
+            atenção do gestor logístico do que os das 
+            classes B e C, pois possuem os menores 
+            percentuais em quantidade de itens e os 
+            maiores percentuais em custos, o que afeta 
+            diretamente a relação fornecedor/cliente.</p>      
+    
+        <p>II. Os itens da classe B, que são os de 
+            percentuais intermediários em quantidade 
+            de itens e os de menores percentuais em 
+            custos, vão requerer atenção intermediária 
+            desse gestor na relação fornecedor/cliente.</p>
+
+        <p>III. Os itens que vão requerer menor atenção 
+            do gestor na relação fornecedor/cliente 
+            serão os itens da classe C, que têm maiores 
+            percentuais em quantidade de itens e 
+            percentuais intermediários em custos.</p>
+
+        <p>IV. A inserção dos dados relativos aos estoques 
+            e dos custos de todos os produtos em uma 
+            planilha eletrônica permitirá ao gestor fazer 
+            a classificação dos produtos e, assim, gerar 
+            a curva ABC.</p>
+        <br>
+     
+        <!-- empregamos a tag blockquote para que o texto ficasse alinhado à direita e com formatação menor que o corpo do texto-->
+    
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+    <label for="questão">É correto apenas o que se afirma em:</label>
+        
+        <form action="" method="GET"></form>
+               
+            <p><input type="radio" id="correta" name="alternativa" value="A" onclick="MudarDePaginaC()"><span>A.  I e IV.</span></p>
+            
+            <p><input type="radio" name="alternativa" value="B" onclick="MudarDePaginaE()"><span>B.  II e III.</span></p>
+            <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. Por isso, verificamos no gabarito qual a resposta certa/errada -->
+            <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C.  II e IV.</span></p>
+            
+            <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D.  I, II e III.</span></p>
+            
+            <p><input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()"><span>E.  I, III e IV.</span></p>
+            
+            
+            
+            <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a alternativa B nesse caso.
+            No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, apareça a página
+            com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de cada questão estejam de acordo 
+            com o gabarito da prova de Logística do ENADE de 2018-->
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA12_RC_LGT_2018f.html";  
+        }
+        
+            function MudarDePaginaE(){
+            location.href= "QA12_RE_LGT_2018f.html";
+        }
+       
+       </script>
+
+        <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de acordo com o que vem antes e depois!!!-->
+
+            <p> <a href="QA11_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 11 </button></a>
+                <a href= "QA13_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); color: white;"; > QUESTÃO 13 </button></a></p>
+            <hr>
+
+            <!--botão para sair da prova e ver o resultado.  -->
+            <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style="background-color: #a78aff; color: white;" > FINALIZAR </button></a></p>
+                <br>
+
+            <hr>
+            <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+            </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+            </p>
+    
+        <footer>
+        <hr>
+            <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+            
+            <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+            
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="funçoes.js"></script>
+    <title>Projeto Enade - Logística 2018 - RESULTADO</title>
+    <br>
+    <!--Por meio da tag style, podemos formatar e trazer estilo a página, embora dessa maneira não seja a melhor. Contudo, como é algo pequeno, não há a necessidade de criar um arquivo em CSS e fazer o link para a página.-->
+    <style>
+        body{
+            font-size: 15px;
+            text-align: center;
+            font-family:sans-serif;
+            background: #b9dfd7;
+             color: #333;
+        }
+         h3{
+            background-color: rgba(6, 83, 83, 0.562);
+            
+         }
+    </style>
+</head>
+    <!--O onload está trazendo a função de resultado que pega do storage o que foi selecionado pelo usuário e compara com as alternativas corretas em uma outra função-->
+    
+    <body onload="resultado()"> 
+            <!--Tag img que trás uma imagem salva em uma pasta. A imagem possui Creative Commum, logo podemos fazer uso dela-->
+            <p><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+            <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;" >Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+            <hr>
+            <br>
+            <h2 style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Resultado do Simulado on-line do Quiz ENADE de Logística 2018</h2>
+
+            <p style="text-align: center;">   
+        
+            <!--Trazemos os acertos, erros e o total de questões realizadas, por meio de uma das funções do arquivo em JS-->
+        
+        <div id="mostrarResultado" style="font-size: 18px; font-weight: 600;" > 
+            <p id="acertos"><b>Questões Corretas: nAn</b>  </p>
+            <p id="erradas"><b>Questões Erradas: nAn</b></p>
+            <p id="qtt" style="color: blue;"><b>Questões Respondidas: nAn</b></p>
+
+            <!--Um hiperlink levando de volta para o início da página e para o gabarito-->
+
+            <p> <a href="Eq5_LGT_2018_INDEX.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); 
+            color: white;"; > PÁGINA INICIAL </button></a>
+            <a href= "Eq5_LGT_2018_GABARITO.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); 
+            color: white;"; > GABARITO </button></a></p>
+            <hr>
+            <br>
+            <!--Mais referências, desta vez levando o usuário para o site ao qual retiramos a prova do Enade, do curso de Tecnologia em Logistica do ano de 2018-->
+            
+            <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+            <!--Referência para a Fatec Carapicuíba e o Centro Paula Souza. Utilizamos imagens para melhor visualização-->
+        
+        <footer>             
+            <hr>
+            <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+            
+            <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+               
+        </footer>
+    </body>
+</html>

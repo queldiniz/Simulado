@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>QA17_LGT2018</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <link rel="stylesheet" href="barrinha.css">
+</head>
+    
+<body onchange="salvarFormulario('q17')" onload="autofill('q17')"> 
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+    <hr>
+    <link rel="stylesheet" href="estilo.css">
+    <!--a formatação das nossas páginas do ENADE estão no arquivo CSS estilo.css-->
+    
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 51%, #bcb9b9 51%)"></div>
+    </section>
+
+    <h2>QUESTÃO 17</h2>
+
+        <p>Em logística empresarial, utilizam-se diversos tipos
+        de tecnologia da informação e comunicação para
+        o controle da produção e operação de produtos
+        e serviços, seja qual for o porte da empresa. Com
+        relação à operação, esses sistemas possibilitam
+        controlar os turnos dos operadores, o custo da
+        operação, entre outras funcionalidades.</p>
+
+        <p>Considerando essas informações bem como
+        as ferramentas de tecnologia da informação
+        e comunicação que podem contribuir para o
+        controle de processos empresariais, avalie as
+        afirmações a seguir.</p>
+
+            <p>I. O ERP (enterprise resource planning) é
+            um sistema interfuncional que atua como
+            uma estrutura para integrar e automatizar
+            processos de negócios a serem realizados
+            pelas funções de produção, logística,
+            distribuição, contabilidade, finanças e de
+            recursos humanos de uma empresa.</p>
+            <p>II. O CRM (customer relationship management)
+            é um tipo de programa que permite
+            controlar o registro financeiro da empresa,
+            criando mais fidelidade para os clientes e
+            explorando a possibilidade de obter novos
+            clientes.</p>
+            <p>III. O e-business é o processo de comercialização
+            de produtos e serviços que se realiza por
+            meio da internet e envolve todos os aspectos
+            do relacionamento caracteristicamente
+            eletrônico que a empresa tenha com
+            seus clientes, fornecedores, parceiros e
+            empregados.</p>
+            
+            
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+        <label for="questão">É correto o que se afirma em </label> 
+            
+            <form action="" method="GET"></form>
+    
+            <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. II, apenas.</span></p>
+            
+            <p><input type="radio" name="alternativa" value="B" onclick="MudarDePaginaE()"><span>B. III, apenas.</span></p>
+    
+            <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C. I e II, apenas.</span></p>
+            <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. Por isso, verificamos 
+            no gabarito qual a resposta certa/errada -->
+            <p><input type="radio" id="correta" name="alternativa" value="D" onclick="MudarDePaginaC()"><span>D. I e III, apenas.</span></p>
+            
+            <p><input type="radio" name="alternativa" value="E" onclick="MudarDePaginaE()"><span>E. I, II e III.</span></p>
+                
+           
+
+            <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a alternativa B nesse caso.
+            No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, 
+            apareça a página com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de 
+            cada questão estejam de acordo com o gabarito da prova de Logística do ENADE de 2018-->
+    
+            <script>
+                function MudarDePaginaC(){
+                location.href="QA17_RC_LGT_2018f.html";  
+            }
+            
+             function MudarDePaginaE(){
+                location.href= "QA17_RE_LGT_2018f.html";
+            }
+               
+            </script>
+    
+    
+            <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de acordo com o que vem antes e 
+            depois!!!-->
+        
+            <p> <a href="QA16_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); 
+            color: white;"; > QUESTÃO 16 </button></a>
+            <a href= "QA18_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); 
+            color: white;"; > QUESTÃO 18 </button></a></p>
+            <hr>
+        
+            <!--botão para sair da prova e ver o resultado.  -->
+            <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style="background-color: #a78aff; 
+            color: white;" > FINALIZAR </button></a></p>
+            <br><hr>
+
+            <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+            </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+            </p>
+        
+            <footer>
+            <hr>
+            <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+            
+            <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+            </footer>
+        
+    </body>
+</html>
+    

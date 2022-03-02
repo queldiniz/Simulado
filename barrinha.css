@@ -1,0 +1,8 @@
+.barrinha {
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    margin: 5%;
+    border: medium solid black;
+    background-color: #bcb9b9;
+}

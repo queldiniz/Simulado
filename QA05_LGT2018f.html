@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>QA05_LGT2018</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <script src="funçoes.js"></script>
+    <link rel="stylesheet" href="barrinha.css">
+</head>
+
+<body onchange="salvarFormulario('q5')" onload="autofill('q5')">
+    <p style="text-align: center;"><img src="logo2018enade/enade.png" alt="Logo do Enade 2018"> </p>
+    <h1><b style= "background-color: rgba(6, 83, 83, 0.562); color: white;">Simulado on-line do ENADE de Tecnologia em Logística - 2018</b></h1>
+
+    <hr>
+
+    <link rel="stylesheet" href="estilo.css">
+    <!--a formatação das nossas páginas do ENADE estão no arquivo CSS estilo.css-->
+    <section>
+        <div class="barrinha" style="background: linear-gradient(to right, #4cf24c 0%, #4cf24c 15%, #bcb9b9 15%)"></div>
+    </section>
+
+    <h2>QUESTÃO 05</h2>
+
+        <p style="text-align: center;"> <img
+        src="img/img_QA05.jpg" alt="imagem-ex africa" width="500px"></p>
+
+        <blockquote style="text-align: center;font-size: 15px;">Disponível em: http://www.soubh.com.br/exposicoes/exposicao-ccbb-africa. 
+        Acesso em: 12 jul. 2018 (adaptado).</blockquote> 
+
+        <p> <b>TEXTO 1</b></p>
+
+        <p>A frase em latim “Ex Africa semper aliquid novi”, do escritor romano Caio Plínio, dita há 2.000 anos, significa “da África sempre
+        há novidades a reportar”. A partir dessa ideia, o curador alemão Alfons Hug montou a exposição “Ex Africa”, que conta com 18 
+        artistas de oito países africanos e dois artistas brasileiros. A ideia da mostra é retratar a produção artística africana sem 
+        estereótipos aos quais estamos acostumados, como objetos de artesanato e referências iconográficas.</p>
+
+        <blockquote style="text-align: right;font-size: 15px;">Disponível em: https://www1.folha.uol.com.br/ilustrada/2018. Acesso em: 
+        12 jul. 2018 (adaptado).</blockquote> 
+
+        <p> <b>TEXTO 2</b></p>
+
+        <p>Até as vésperas da era colonial moderna era comum encontrar as imagens positivas sobre a África. Árabes e europeus descreveram as 
+        formas políticas africanas altamente elaboradas e socialmente aperfeiçoadas, entre as quais se alternavam reinos, impérios, 
+        cidades-Estado, entre outras. Após a conferência de Berlim (1885), que definiu a partilha colonial da África, essas imagens 
+        “simpáticas” começaram a sombrear. Reinos e Impérios foram substituídos pelas tribos primitivas em estado de guerra permanente, 
+        umas contra outras, para justificar e legitimar a Missão Civilizadora, que até hoje alimenta o imaginário da África no Brasil.</p>
+
+        <blockquote style="text-align: right;font-size: 15px;">VIEIRA, F. S. S. Do eurocentrismo ao afropessimismo: reflexão sobre a 
+        construção do imaginário “África” no Brasil.<b>Em Debate</b>. PUC-Rio, n. 03, 2006 (adaptado).</blockquote> 
+        <!-- empregamos a tag blockquote para que o texto ficasse alinhado à direita e com formatação menor que o corpo do texto-->
+
+        <p>A partir dos textos apresentados, avalie as afirmações a seguir.</p>
+
+        <p>I. A África tem sido pensada, por muitos, como um único país, compreendida de forma monolítica, como se fosse formada 
+        por cultura única, ou, até mesmo, um lugar de povos sem cultura alguma, o que contribui e reforça a exclusão social das 
+        obras africanas do sistema das artes visuais.</p>
+        <p>II. Construídas sob a égide do clichê da miserabilidade, as clássicas representações sobre a África, que retratam o 
+        continente como um celeiro da tradição, do arcaísmo, da produção manufaturada e artesanal, são estereótipos que precisam 
+        ser superados, por serem incompatíveis com a multiplicidade de expressões artísticas africanas.</p>
+        <p>III. Os estereótipos sobre o continente africano foram construídos a partir de interesses políticos, culturais e econômicos 
+        que sustentaram, durante séculos, projetos de exploração e ações excludentes.</p>
+        <!--tags para inserir os botões de alternativas e abrir outras páginas para as respostas certa/erradas-->
+    
+    <label for="questão">É correto o que se afirma em </label> 
+         
+        <form action="" method="GET"></form>
+
+        <p><input type="radio" name="alternativa" value="A" onclick="MudarDePaginaE()"><span>A. I, apenas.</span></p>
+        
+        <p><input type="radio" name="alternativa" value="B" onclick="MudarDePaginaE()"><span>B. III, apenas.</span></p>
+
+        <p><input type="radio" name="alternativa" value="C" onclick="MudarDePaginaE()"><span>C. I e II, apenas.</span></p>
+        <!--lembrando que esse C EM MUDAR DE PÁGINA é pra linkar com a resposta correta e o E com a resposta errada. Por isso, verificamos 
+        no gabarito qual a resposta certa/errada -->
+        <p><input type="radio" name="alternativa" value="D" onclick="MudarDePaginaE()"><span>D. II e III, apenas.</span></p>
+        
+        <p><input type="radio" id = "correta" name="alternativa" value="E" onclick="MudarDePaginaC()"><span>E. I, II e III.</span></p>
+
+       
+        <!-- ao empregar a função MudarDePaginaC(), inserimos o link da resposta correta, por exemplo, a alternativa B nesse caso.
+        No entanto, nas demais alternativas incorretas, usamos a função MudarDePaginaE() para que ao clicar nas respostas incorretas, 
+        apareça a página com a mensagem da resposta errada. É importante estar atento ao PaginaC e PaginaE, a fim de que as respostas de 
+        cada questão estejam de acordo com o gabarito da prova de Logística do ENADE de 2018-->
+
+        <script>
+            function MudarDePaginaC(){
+            location.href="QA05_RC_LGT_2018f.html";  
+        }
+        
+            function MudarDePaginaE(){
+            location.href= "QA05_RE_LGT_2018f.html";
+        }
+        
+        </script>
+
+          <!--botões para voltar para a questão anterior ou avançar para a próxima questão. Links inseridos de acordo com o que vem antes e 
+        depois!!!-->
+
+            <p> <a href="QA04_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); 
+            color: white;"; > QUESTÃO 04 </button></a>
+            <a href= "QA06_LGT2018f.html" rel = "next" target="_self"> <button style="background-color: rgba(6, 83, 83, 0.562); 
+            color: white;"; > QUESTÃO 06 </button></a></p>
+            <hr>
+
+            <!--botão para sair da prova e ver o resultado.  -->
+            <p font-size: 13 px;> <a href="Eq5_LGT_2018_RESULTADO.html" rel="next" target="_self"> <button style="background-color: #a78aff; 
+            color: white;" > FINALIZAR </button></a></p>
+            <br> 
+
+            <hr>
+            <p style="text-align: right; font-size: 13px;"><b>Fonte:</b> As questões desse simulado foram obtidas na <a href="http://inep.gov.br/educacao-superior/enade/provas-e-gabaritos">prova</a>  disponibilizada no site do <a href="https://www.gov.br/inep/pt-br">INEP</a> - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. </a> 
+            </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos:</b><a href="http://enade.inep.gov.br/enade/#!/index"> Inep - Enade </a> </p>
+            <p style="text-align: right; font-size: 13px;"><b>Créditos de imagem:</b> ENADE - Tecnologia em Logística, 2018.</p>
+            </p>
+
+        <footer>
+            <hr>
+            <p style="text-align: center;"> <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank"><img src="img/fatec.logo.png" alt="Logo da Fatec" width="130px"></a>
+            
+            <a href="https://www.cps.sp.gov.br/" target="blank"> <img src="img/ceeteps.png" alt="Logo da CPS" width="200px"></a></p>
+        </footer>
+    
+</body>
+</html>
